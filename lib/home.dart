@@ -223,7 +223,7 @@ class _homeState extends State<home> with SingleTickerProviderStateMixin {
                                         elevation: 200,
                                         shadowColor: Colors.blue,
                                         child: Image.asset(
-                                          "assets/images/profile.jpg",
+                                          "assets/images/profile.png",
                                           height: 255,
                                           width: 200,
                                           fit: BoxFit.cover,
@@ -281,7 +281,7 @@ class _homeState extends State<home> with SingleTickerProviderStateMixin {
                                         elevation: 200,
                                         shadowColor: Colors.blue,
                                         child: Image.asset(
-                                          "assets/images/profile.jpg",
+                                          "assets/images/profile.png",
                                           height: 200,
                                           width: 300,
                                         ),
