@@ -13,7 +13,7 @@ class about extends StatelessWidget {
           top: 10,
         ),
         child: Text(
-          "Hello, this is Muhammad Sarfraz Afzal, \nA dedicated Software Engineering graduate with a strong focus on mobile application development using Flutter. Experienced in designing and developing cross-platform, high-performance applications with expertise in Dart, Flutter framework, MVVM architecture, API integration, and Firebase services. Committed to building scalable, efficient, and user-centric mobile solutions while continuously enhancing technical skills.",
+          "Software Engineering graduate specializing in Flutter development. Experienced in building cross-platform, high-performance mobile applications using Dart, MVVM architecture, GetX, API integration, and Firebase.",
           style: TextStyle(fontSize: screenWidth < 700 ? 12 : 16),
         ),
       ),

@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+
 class weather_app extends StatefulWidget {
   State<weather_app> createState() => _weather_appState();
 }
@@ -55,6 +56,7 @@ class _weather_appState extends State<weather_app> {
     _timer?.cancel();
     super.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
@@ -99,22 +101,24 @@ class _weather_appState extends State<weather_app> {
               padding: const EdgeInsets.only(right: 160),
               child: Text("Name   \n➤ weather_app"),
             ),
-            SizedBox(height: 10,),
+            SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.only(right: 100),
               child: Text("Purpose\n➤ Weather Info around us"),
             ),
-            SizedBox(height: 10,),
+            SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.only(right: 120),
-              child: Text("Technologies Used \n🔹Flutter for front-end\n🔹API for backend data\n🔹Figma"),
+              child: Text(
+                "Technologies Used \n🔹Flutter for front-end\n🔹API for backend data\n🔹Figma",
+              ),
             ),
-            SizedBox(height: 10,),
+            SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.only(left: 50),
               child: ElevatedButton(
                 onPressed: () async {
-                  final Uri url = Uri.parse("https://github.com/sooraj890/weather_app/releases/tag/v1.0.0");
+                  final Uri url = Uri.parse("");
 
                   if (!await launchUrl(url)) {
                     throw Exception("Could not launch URL");
@@ -122,9 +126,9 @@ class _weather_appState extends State<weather_app> {
                 },
                 child: Text("Download"),
               ),
-            )
+            ),
           ],
-        )
+        ),
       ],
     );
   }

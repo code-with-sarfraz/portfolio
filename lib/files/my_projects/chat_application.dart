@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+
 class chat_app extends StatefulWidget {
   const chat_app({super.key});
 
@@ -59,6 +60,7 @@ class _chat_appState extends State<chat_app> {
     _timer?.cancel();
     super.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
@@ -103,32 +105,34 @@ class _chat_appState extends State<chat_app> {
               padding: const EdgeInsets.only(right: 160),
               child: Text("Name   \n➤ chat_application"),
             ),
-            SizedBox(height: 10,),
+            SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.only(right: 100),
               child: Text("Purpose\n➤ Real-time communication"),
             ),
-            SizedBox(height: 10,),
+            SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.only(right: 80),
-              child: Text("Technologies Used \n🔹Flutter for UI\n🔹Firebase for backend support\n🔹Figma for designing"),
+              child: Text(
+                "Technologies Used \n🔹Flutter for UI\n🔹Firebase for backend support\n🔹Figma for designing",
+              ),
             ),
-            SizedBox(height: 10,),
+            SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.only(left: 50),
               child: ElevatedButton(
                 onPressed: () async {
-                  final Uri url = Uri.parse("https://github.com/sooraj890/talk_now/releases/tag/v1.0.0");
+                  final Uri url = Uri.parse("");
 
                   if (!await launchUrl(url)) {
                     throw Exception("Could not launch URL");
                   }
                 },
                 child: Text("Download"),
-              )
-            )
+              ),
+            ),
           ],
-        )
+        ),
       ],
     );
   }
