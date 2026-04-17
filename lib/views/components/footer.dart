@@ -135,11 +135,13 @@ class footer extends StatelessWidget {
                   ),
                 ),
                 Expanded(
-                  child: SizedBox(
+                  child: Center(
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Align(
-                          alignment: Alignment.centerLeft,
+                          alignment: Alignment.center,
                           child: Text(
                             "Contact Me",
                             style: TextStyle(fontSize: fontSize),
@@ -147,6 +149,7 @@ class footer extends StatelessWidget {
                         ),
                         SizedBox(height: 10),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Icon(Icons.phone, size: 15),
                             Text(
@@ -156,6 +159,7 @@ class footer extends StatelessWidget {
                           ],
                         ),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Icon(Icons.email, size: 15),
                             Text(
@@ -165,11 +169,14 @@ class footer extends StatelessWidget {
                           ],
                         ),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Icon(Icons.place, size: 15),
+                            // Icon(Icons.place, size: 15),
                             Expanded(
                               child: Text(
                                 " punjab, Pakistan",
+                                textAlign:
+                                    TextAlign.center, // optional but better
                                 style: TextStyle(fontSize: 11),
                               ),
                             ),

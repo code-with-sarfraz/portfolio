@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/views/components/slideUpTransition.dart';
+import 'slideUpTransition.dart';
 
 class about extends StatelessWidget {
   Widget build(BuildContext context) {

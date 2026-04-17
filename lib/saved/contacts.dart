@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/views/components/sectionCard.dart';
+import 'package:portfolio/views/components/slideUpTransition.dart';
 import 'package:url_launcher/url_launcher.dart';
-
-import '../sectionCard.dart';
-import '../slideUpTransition.dart';
 
 class contact extends StatelessWidget {
   void openLink(String url) async {

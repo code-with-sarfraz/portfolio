@@ -1,15 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio/files/my_projects/my_projects.dart';
-import 'package:portfolio/files/resume.dart';
+import 'package:portfolio/saved/contacts.dart';
+import 'package:portfolio/views/components/certificates.dart';
+import 'package:portfolio/views/components/education.dart';
+import 'package:portfolio/views/components/experiance.dart';
+import 'package:portfolio/views/components/footer.dart';
+import 'package:portfolio/views/components/my_projects/my_projects.dart';
+import 'package:portfolio/views/components/resume.dart';
+import 'package:portfolio/views/components/skills.dart';
+
 import 'package:url_launcher/url_launcher.dart';
 import 'files/about.dart';
-import 'files/certificates.dart';
-import 'files/contact.dart';
-import 'files/education.dart';
-import 'files/experiance.dart';
-import 'files/footer.dart';
-import 'files/skills.dart';
 
 enum MenuItem {
   about,
@@ -409,7 +410,7 @@ class _homeState extends State<home> with SingleTickerProviderStateMixin {
                                       : constraints.maxWidth,
                               child: Container(
                                 key: experiance,
-                                child: experiances(),
+                                child: Experiences(),
                               ),
                             ),
                             Divider(thickness: 1, color: Colors.grey.shade400),

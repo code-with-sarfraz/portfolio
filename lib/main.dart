@@ -1,26 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-import 'package:portfolio/home.dart';
+import 'package:portfolio/views/home_view.dart';
+import 'package:portfolio/viewmodels/portfolio_viewmodel.dart';
 
 void main() {
+  Get.put(PortfolioViewModel()); // Inject ViewModel globally
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Portfolio',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-
-        scaffoldBackgroundColor: Colors.black,
+      theme: ThemeData.dark().copyWith(
+        scaffoldBackgroundColor: const Color(0xFF0A0F1A), // deep dark blue background
+        primaryColor: Colors.blueAccent,
       ),
-      home: home(),
+      home: const HomeView(),
     );
   }
 }

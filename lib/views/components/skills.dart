@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../sectionCard.dart';
-import '../slideUpTransition.dart';
+import 'sectionCard.dart';
+import 'slideUpTransition.dart';
 
 class skills extends StatelessWidget {
   Widget build(BuildContext context) {
